@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway-Medium.woff);
+}
+
+body {
+    margin: 0 !important;
+    font-family: 'Raleway' !important;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.h-100vh {
+    height: 100vh;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.bg-primary {
+    background-color: #21BCEC !important;
+}
+
+.background-image {
+    background-image: url('../images/bg-image.jpg');
+    opacity: .4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+}
+
+a:hover,
+button:hover,
+button:focus {
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+
+.navbar {
+    color: white;
+    height: 60px;
+    padding: 60px 135px;
+}
+
+.navbar-logo {
+    width: 135px;
+    padding: 8px 8px 6px;
+    display: inline-block;
+}
+
+.navbar-logo img {
+    display: inline-block;
+    width: 100%;
+}
+
+.navbar-items {
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar-items>ul {
+    display: inline;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar-item {
+    display: inline;
+    padding: 15px 0px;
+    font-size: 20px;
+    font-family: 'Raleway';
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.navbar-item>span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.underline {
+    border: 2px solid transparent;
+}
+
+.navbar-item-active .underline {
+    border: 2px solid #21BCEC !important;
+    border-radius: 5px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.navbar-buttons {
+    float: right;
+    height: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-items>span {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 16px 0px;
+    padding: 10px 0px;
+    margin-left: 33px;
+}
+
+.navbar-items button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    padding: 5px 20px;
+}
