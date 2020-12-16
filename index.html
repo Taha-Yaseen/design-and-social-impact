@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="src/css/custom.css">
     <!-- Custom Styling -->
     <link rel="stylesheet" href="src/css/index.css">
+    <!-- Font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -22,51 +24,137 @@
             <div class="navbar-items">
                 <ul>
                     <li class="navbar-item navbar-item-active">
-                        <span>
-                            Home
-                            <span class="underline"></span>
-                        </span>
+                        Home
                     </li>
                     <li class="navbar-item">
-                        <span>
-                            About Us
-                            <span class="underline"></span>
-                        </span>
+                        About Us
                     </li>
                     <li class="navbar-item">
-                        <span>
-                            Forums
-                            <span class="underline"></span>
-                        </span>
+                        Forums
                     </li>
                     <li class="navbar-item">
-                        <span>
-                            Contact Us
-                            <span class="underline"></span>
-                        </span>
+                        Contact Us
                     </li>
                     <li class="navbar-item">
-                        <span>
-                            Login
-                            <span class="underline"></span>
-                        </span>
+                        Login
                     </li>
                 </ul>
                 <!-- <span>
                     <button>Login</button>
                     <span class="underline"></span>
                 </span> -->
-                <span>
-                    <button class="bg-primary">Sign Up</button>
-                    <span class="underline"></span>
-                </span>
+                <button class="bg-primary">Sign Up</button>
             </div>
         </div>
-        <!-- <h1>Anywhere</h1> -->
+        <div class='social-media-icons self-flex-start'>
+            <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+            <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+            <a href="https://linkedin.com"><i class="fa fa-linkedin"></i></a>
+            <a href="https://youtube.com"><i class="fa fa-youtube-play"></i></a>
+        </div>
+        <p class="subtitle">Master Your</p>
+        <div class="row title-container">
+            <p class="title">Anywhere</p>
+            <div class="dot"></div>
+        </div>
+        <i class="fa fa-angle-down down-arrow"></i>
     </div>
-    <div class="h-100vh bg-transparent">
-        <h2>About Us</h2>
+
+    <!-- ABOUT US SECTION -->
+
+    <div class="h-100vh row about-us-section">
+        <div>
+            <p class="section-title">About Us.</p>
+            <p class="description">
+                Rafik Hariri University (RHU) was established in September
+                1999 by its founder to promote his vision of providing
+                affordable excellence in education to all. Bright students from
+                the design and social impact course developed this website
+                under the supervision of their creative instructors. This
+                website is easy to use, we tried our best to provide our users
+                with learning the greatest content using a platform that's as
+                simple as possible. In addition to that, the users get excellent
+                online education with the most affordable prices possible.
+            </p>
+            <button class="bg-primary learn-more-btn">Learn More</button>
+        </div>
+        <div id="about-right-container">
+
+        </div>
     </div>
+
+    <!-- WHY US SECTION -->
+
+    <div class="h-100vh row about-us-section hide-overflow">
+        <div id="why-us-left-container">
+            <p class="section-title">Why Us.</p>
+            <div class="row">
+                <div class="why-us-image">
+                    <p class="why-us-image-title">Our Goal</p>
+                    <p class="why-us-image-description">Our goal is to let you learn with the best quality</p>
+                </div>
+                <div class="why-us-image">
+                    <p class="why-us-image-title">Our Mission</p>
+                    <p class="why-us-image-description">Our mission is to deliver knowledge to your hands</p>
+                </div>
+                <div class="why-us-image">
+                    <p class="why-us-image-title">Our Vision</p>
+                    <p class="why-us-image-description">Meet our team that consists of the greatest tutors</p>
+                </div>
+                <button class="bg-primary" id="why-us-learn-more-btn">Learn More<i class="fa fa-angle-right arrow-right"></i></button>
+            </div>
+        </div>
+        <div id="why-us-right-container">
+            <p class="description light-txt">Dream up! Excellent education at the comfort of your couch. Get the best education with an affordable price!</p>
+        </div>
+    </div>
+
+    <!-- SEARCH SECTION -->
+
+    <div class="h-100vh row about-us-section">
+        <div id="search-left-container">
+            <p class="section-title">Search for courses & programs instantly!</p>
+            <div id="search-image">
+                <input type="text" placeholder="Find courses & programs" class="search-input">
+                <i class="fa fa-angle-right search-arrow"></i>
+            </div>
+        </div>
+        <div id="search-right-container">
+            <p class="description light-txt">Find more courses and programs to let out your hidden talents and interests. Enjoy it to the max!</p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <div id="footer" class="row">
+        <p id="copyright-text">Copyright &#169;	 2020 by Rafik Hariri University</p>
+
+        <div class="row" id="footer-nav">
+            <p>
+                Login
+            </p>
+            <p>
+                Signup
+            </p>
+            <p>
+                About Us
+            </p>
+            <p>
+                Contact Us
+            </p>
+        </div>
+        <div class='social-media-icons row'>
+            <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+            <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+            <a href="https://linkedin.com"><i class="fa fa-linkedin"></i></a>
+            <a href="https://youtube.com"><i class="fa fa-youtube-play"></i></a>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+
     <script src="src/js/jquery-3.5.1.slim.min.js"></script>
     <script src="src/js/custom.js"></script>
     <script src="src/js/index.js"></script>
