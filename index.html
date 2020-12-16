@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="background-image"></div>
+    <!-- <div class="background-image"></div> -->
     <div class="h-100vh bg-black">
         <div class="navbar">
             <div class="navbar-logo">
@@ -55,13 +55,15 @@
             <p class="title">Anywhere</p>
             <div class="dot"></div>
         </div>
-        <i class="fa fa-angle-down down-arrow"></i>
+        <a href="#about-us">
+            <i class="fa fa-angle-down down-arrow"></i>
+        </a>
     </div>
 
     <!-- ABOUT US SECTION -->
 
-    <div class="h-100vh row about-us-section">
-        <div>
+    <div class="h-100vh row about-us-section" id="about-us">
+        <div id="about-left-container">
             <p class="section-title text-bold">About Us.</p>
             <p class="description">
                 Rafik Hariri University (RHU) was established in September
@@ -71,8 +73,7 @@
                 under the supervision of their creative instructors. This
                 website is easy to use, we tried our best to provide our users
                 with learning the greatest content using a platform that's as
-                simple as possible. In addition to that, the users get excellent
-                online education with the most affordable prices possible.
+                simple as possible.
             </p>
             <button class="bg-primary learn-more-btn">Learn More</button>
         </div>
@@ -127,35 +128,59 @@
 
     <!-- FAQs SECTION -->
 
-    <div></div>
+    
+    <div class="row faqs-section bg-black">
+        <div id="faqs-left-container">
+            <div id="aqs-left-container-white-box"></div>
+        </div>
+        <div id="faqs-right-container">
+            <p class="faqs-section-title">FAQs</p>
+            <div class="faqs-details">
+                <div class="question-row">
+                    <p class="question">This is a question <i class="fa fa-plus color-primary"></i></p>
+                    <p class="question">This is a question <i class="fa fa-plus color-primary"></i></p>
+                </div>
+                <div class="question-row">
+                    <p class="question">This is a question <i class="fa fa-plus color-primary"></i></p>
+                    <p class="question">This is a question <i class="fa fa-plus color-primary"></i></p>
+                </div>
+                <div class="question-row">
+                    <p class="question">This is a question <i class="fa fa-plus color-primary"></i></p>
+                    <p class="question">This is a question <i class="fa fa-plus color-primary"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- FOOTER -->
 
-    <!-- <div id="footer" class="row">
-        <p id="copyright-text">Copyright &#169;	 2020 by Rafik Hariri University</p>
-
-        <div class="row" id="footer-nav">
-            <p>
-                Login
-            </p>
-            <p>
-                Signup
-            </p>
-            <p>
-                About Us
-            </p>
-            <p>
-                Contact Us
-            </p>
+    <div id="footer-section">
+        <div id="footer" class="row">
+            <p id="copyright-text">Copyright &#169;	 2020 by Rafik Hariri University</p>
+    
+            <div class="row" id="footer-nav">
+                <p>
+                    Login
+                </p>
+                <p>
+                    Signup
+                </p>
+                <p>
+                    About Us
+                </p>
+                <p>
+                    Contact Us
+                </p>
+            </div>
+            <div class='social-media-icons row'>
+                <a href="https://instagram.com"><i class="fa fa-instagram fa-lg"></i></a>
+                <a href="https://facebook.com"><i class="fa fa-facebook fa-lg"></i></a>
+                <a href="https://twitter.com"><i class="fa fa-twitter fa-lg"></i></a>
+                <a href="https://linkedin.com"><i class="fa fa-linkedin fa-lg"></i></a>
+                <a href="https://youtube.com"><i class="fa fa-youtube-play fa-lg"></i></a>
+            </div>
         </div>
-        <div class='social-media-icons row'>
-            <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
-            <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
-            <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
-            <a href="https://linkedin.com"><i class="fa fa-linkedin"></i></a>
-            <a href="https://youtube.com"><i class="fa fa-youtube-play"></i></a>
-        </div>
-    </div> -->
+    </div>
 
     <!-- SCRIPTS -->
 
