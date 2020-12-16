@@ -154,7 +154,7 @@
 .why-us-image {
     width: 441px;
     box-sizing: border-box;
-    padding: 3% 3% 2% 3%;
+    padding: 50px;
     height: 800px;
     background-color: grey;
     align-items: flex-start;
@@ -222,7 +222,7 @@
 }
 
 #search-right-container {
-    padding: 1vh 13vw 3vw 5vw;
+    padding: 1vh 13vw 3vw 50px;
     box-sizing: border-box;
     width: 751px;
     height: 60%;
@@ -236,10 +236,10 @@
     align-items: flex-start;
     justify-content: flex-end;
     margin-top: 5%;
-    padding: 12% 10%;
+    padding: 125px 100px;
     width: 71vw;
     height: 578px;
-    background-color: transparent;
+    background-color: grey;
     z-index: 100;
     box-shadow: inset 0px -180px 170px -126px rgba(0,0,0,0);
     position: relative;
@@ -249,8 +249,8 @@
     outline: none;
     border: none;
     color: white;
-    width: 53%;
-    font-size: 30px;
+    width: 600px;
+    font-size: 26px;
     background-color: transparent;
     position: relative;
 }
@@ -263,19 +263,26 @@
     position: absolute;
     content: '';
     height: 5px;
-    bottom: 4.8vw; 
+    bottom: 105px;
     margin: 0 auto;
-    left: -36.5%;
-    right: 0;
-    width: 50%;
-    background: #21BCEC;
+    left: 100px;
+    width: 650px;
+    background: white;
     border-radius: 5px;
 }
 
 .search-arrow {
     position: absolute;
-    right: 45%;
+    left: 720px;
     color: white;
-    font-size: 30px !important;
+    /* font-size: 40px !important; */
     color: #21BCEC;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
 }
