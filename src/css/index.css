@@ -135,7 +135,10 @@
     width: 750px;
     height: 550px;
     margin-bottom: 30px;
-    background-color: grey;
+    /* background-color: grey; */
+    background-image: url('../images/home/Picture1.png');
+    background-repeat: no-repeat;
+    background-size: 750px;
     position: relative;
 }
 
@@ -163,14 +166,25 @@
     box-sizing: border-box;
     padding: 50px;
     height: 800px;
-    background-color: grey;
+    /* background-color: grey; */
     align-items: flex-start;
     justify-content: flex-end;
     box-shadow: inset 0px -180px 170px -126px rgba(0,0,0,1);
 }
 
+.why-us-image:nth-of-type(1) {
+    background-image: url('../images/home/Picture6.png');
+    background-size: auto 800px;
+}
+
 .why-us-image:nth-of-type(2) {
-    background-color: #555;
+    background-image: url('../images/home/Picture7.png');
+    background-size: 441px;
+}
+
+.why-us-image:nth-of-type(3) {
+    background-image: url('../images/home/Picture8.png');
+    background-size: auto 800px;
 }
 
 #why-us-images-container {
@@ -245,7 +259,9 @@
     padding: 125px 100px;
     width: 71vw;
     height: 578px;
-    background-color: grey;
+    /* background-color: grey; */
+    background-image: url('../images/home/Picture3.png');
+    background-size: 71vw;
     z-index: 100;
     box-shadow: inset 0px -180px 170px -126px rgba(0,0,0,0);
     position: relative;
@@ -298,13 +314,15 @@
     height: 88vh;
     margin: 0 auto;
     padding: 0 144px;
+    position: relative;
+    z-index: -2;
 }
 
 #faqs-left-container {
     width: 750px;
     height: 550px;
     margin-top: 8vh;
-    background-color: grey;
+    /* background-color: grey; */
     position: relative;
 }
 
@@ -312,11 +330,11 @@
     position: absolute;
     content: '';
     height: 363px;
-    top: -55px;
-    right: -58px;
+    bottom: -55px;
+    left: -58px;
     width: 328px;
     background: white;
-    z-index: 0;
+    z-index: -1;
 }
 
 #faqs-right-container {
@@ -349,3 +367,17 @@
     color: white;
     font-size: 26px;
 }
+
+#overlay {
+    position: relative; /* Sit on top of the page content */
+    /* display: none; Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,1); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
