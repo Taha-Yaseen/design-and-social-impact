@@ -25,22 +25,40 @@
             <div class="navbar-items">
                 <ul>
                     <li class="navbar-item navbar-item-active">
-                        Home
+                        <a href="#">
+                            Home
+                            <span class="underline"></span>
+                        </a>
                     </li>
                     <li class="navbar-item">
-                        About Us
+                        <a href="#">
+                            About Us
+                            <span class="underline"></span>
+                        </a href="#">
                     </li>
                     <li class="navbar-item">
-                        Forums
+                        <a href="#">
+                            Forums
+                            <span class="underline"></span>
+                        </a>
                     </li>
                     <li class="navbar-item">
-                        Contact Us
+                        <a href="#">
+                            Contact Us
+                            <span class="underline"></span>
+                        </a>
                     </li>
                     <li class="navbar-item">
-                        Login
+                        <a href="#">
+                            Login
+                            <span class="underline"></span>
+                        </a>
                     </li>
                 </ul>
-                <button class="bg-primary">Sign Up</button>
+                <a href="#">
+                    <button class="bg-primary">Sign Up</button>
+                    <span class="underline"></span>
+                </a>
             </div>
         </div>
         <div class='social-media-icons self-flex-start'>
@@ -50,12 +68,16 @@
             <a href="https://linkedin.com"><i class="fa fa-linkedin"></i></a>
             <a href="https://youtube.com"><i class="fa fa-youtube-play"></i></a>
         </div>
-        <p class="subtitle">Master Your</p>
-        <div class="row title-container">
-            <p class="title">Anywhere</p>
-            <div class="dot"></div>
+        <div class="slide">
+            <p class="subtitle">Master Your</p>
+            <div class="row title-container">
+                <p class="title">Anywhere</p>
+                <div class="dot"></div>
+            </div>
         </div>
-        <a href="#about-us">
+
+
+        <a id="down-arrow-anchor" href="#about-us">
             <i class="fa fa-angle-down down-arrow"></i>
         </a>
     </div>
@@ -115,10 +137,11 @@
         <div id="search-left-container">
             <p class="search-section-title text-bold">Search for courses & programs instantly!</p>
             <div id="search-image">
-                <div id="search-overlay"></div>
-                <div class="justify-center align-center over-search-image">
-                    <input type="text" placeholder="Find courses & programs" class="search-input">
-                    <i class="fa fa-angle-right fa-3x search-arrow"></i>
+                <div id="search-overlay">
+                    <div class="justify-center align-center over-search-image">
+                        <input type="text" placeholder="Find courses & programs" class="search-input">
+                        <i class="fa fa-angle-right fa-3x search-arrow"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -173,7 +196,7 @@
                     Contact Us
                 </p>
             </div>
-            <div class='social-media-icons row'>
+            <div class='social-media-icons row ml-0'>
                 <a href="https://instagram.com"><i class="fa fa-instagram fa-lg"></i></a>
                 <a href="https://facebook.com"><i class="fa fa-facebook fa-lg"></i></a>
                 <a href="https://twitter.com"><i class="fa fa-twitter fa-lg"></i></a>

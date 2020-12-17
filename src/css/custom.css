@@ -25,6 +25,10 @@ body {
     font-family: 'Raleway' !important;
 }
 
+#copyright-text {
+    margin-right: 25px;
+}
+
 div {
     display: flex;
     flex-direction: column;
@@ -41,6 +45,10 @@ button:hover {
 
 .row {
     flex-direction: row;
+}
+
+.ml-0 {
+    margin-left: 0px !important;
 }
 
 .h-100vh {
@@ -64,11 +72,15 @@ button:hover {
 }
 
 a:hover,
+a:active,
+a:focus,
+a,
 button:hover,
 button:focus {
     cursor: pointer;
     text-decoration: none;
     outline: none;
+    background-color: transparent;
 }
 
 .light-txt {
@@ -103,41 +115,16 @@ button:focus {
 .navbar-items>ul {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .navbar-item {
     cursor: pointer;
     font-size: 20px;
     font-family: 'Raleway';
-    padding: 20px 30px;
     text-align: center;
     position: relative;
-}
-
-.navbar-item:hover:after {
-    position: absolute;
-    content: '';
-    height: 5px;
-    bottom: 5px; 
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    width: calc(100% - 60px);
-    background: #21BCEC;
-    border-radius: 5px;
-}
-
-.navbar-item-active:after {
-    position: absolute;
-    content: '';
-    height: 5px;
-    bottom: 5px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    width: calc(100% - 60px);
-    background: #21BCEC;
-    border-radius: 5px;
+    color: white !important;
 }
 
 .navbar-buttons {
@@ -159,10 +146,6 @@ button:focus {
     margin-left: 30px;
     transition: all 300ms ease-in;
 }
-
-/* .navbar-items button:hover {
-    box-shadow: 0px 0px 30px 0px rgba(33,188,236,0.69);
-} */
 
 .self-flex-start {
     align-self: flex-start;
@@ -187,4 +170,38 @@ button:focus {
 
 #footer .social-media-icons i:hover {
     color: white;
+}
+
+/* ==================================== */
+
+.navbar-item>a {
+    height: 100%;
+    padding: 20px 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.underline {
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    left: 30px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.navbar-item-active .underline {
+    border: 2px solid #21BCEC !important;
+}
+
+.navbar-items>span {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 16px 0px;
+    padding: 10px 0px;
+    margin-left: 33px;
 }

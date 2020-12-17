@@ -83,6 +83,13 @@
     transition: all 200ms ease-out;
 }
 
+#down-arrow-anchor {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
 /* .down-arrow:hover {
     bottom: 10px;
     font-size: 85px !important;
@@ -255,7 +262,7 @@
 #search-right-container {
     padding: 1vh 13vw 3vw 50px;
     box-sizing: border-box;
-    width: 751px;
+    width: 750px;
     height: 60%;
     align-self: flex-start;
     justify-content: center;
@@ -269,18 +276,17 @@
     margin-top: 5%;
     width: 71vw;
     height: 578px;
-    /* background-color: grey; */
     background-image: url('../images/home/Picture3.png');
-    background-size: 71vw;
-    z-index: 100;
-    box-shadow: inset 0px -180px 170px -126px rgba(0,0,0,0);
+    background-size: auto 578px;
+    z-index: 0;
     position: relative;
 }
 
 .over-search-image {
-    margin: 125px 100px;
-    position: fixed;
-    z-index: 20;
+    bottom: 120px;
+    left: 100px;
+    position: absolute;
+    z-index: 3;
 }
 
 .search-input {
@@ -297,7 +303,7 @@
     color: white;
 }
 
-#search-image:after {
+#search-overlay:after {
     position: absolute;
     content: '';
     height: 5px;
@@ -311,7 +317,7 @@
 
 .search-arrow {
     position: absolute;
-    left: 720px;
+    left: 620px;
     color: white;
     color: #21BCEC;
 }
@@ -338,10 +344,9 @@
     width: 750px;
     height: 550px;
     margin-top: 8vh;
-    /* background-color: grey; */
     background-image: url('../images/home/Picture1.png');
     background-repeat: no-repeat;
-    background-size: 750px;
+    background-size: auto 550px;
     position: relative;
 }
 
@@ -358,8 +363,8 @@
 
 #faqs-right-container {
     width: 640px;
-    height: 88vh;
-    padding-top: 300px;
+    height: 87vh;
+    padding-top: 25vh;
     align-items: flex-start;
 }
 
@@ -391,12 +396,8 @@
     position: relative;
     width: 71vw;
     height: 578px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background: rgb(8,8,8);
     background: linear-gradient(0deg, rgba(8,8,8,1) 0%, rgba(0,0,0,0) 63%);
-    z-index: 5;
+    z-index: 2;
     cursor: pointer;
   }
