@@ -1,0 +1,10 @@
+.background-image {
+    background-image: url('../images/bg-image.jpg');
+    opacity: .4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    height: 5400px;
+    width: 100%;
+}

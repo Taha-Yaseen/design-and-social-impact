@@ -1,3 +1,14 @@
+.background-image {
+    background-image: url('../images/bg-image.jpg');
+    opacity: .4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    height: 5400px;
+    width: 100%;
+}
+
 .social-media-icons {
     justify-content: center;
     margin-left: 144px;
@@ -136,7 +147,7 @@
     height: 550px;
     margin-bottom: 30px;
     /* background-color: grey; */
-    background-image: url('../images/home/Picture1.png');
+    background-image: url('../images/home/Picture5.png');
     background-repeat: no-repeat;
     background-size: 750px;
     position: relative;
@@ -256,7 +267,6 @@
     align-items: flex-start;
     justify-content: flex-end;
     margin-top: 5%;
-    padding: 125px 100px;
     width: 71vw;
     height: 578px;
     /* background-color: grey; */
@@ -265,6 +275,12 @@
     z-index: 100;
     box-shadow: inset 0px -180px 170px -126px rgba(0,0,0,0);
     position: relative;
+}
+
+.over-search-image {
+    margin: 125px 100px;
+    position: fixed;
+    z-index: 20;
 }
 
 .search-input {
@@ -323,6 +339,9 @@
     height: 550px;
     margin-top: 8vh;
     /* background-color: grey; */
+    background-image: url('../images/home/Picture1.png');
+    background-repeat: no-repeat;
+    background-size: 750px;
     position: relative;
 }
 
@@ -368,16 +387,16 @@
     font-size: 26px;
 }
 
-#overlay {
-    position: relative; /* Sit on top of the page content */
-    /* display: none; Hidden by default */
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
+#search-overlay {
+    position: relative;
+    width: 71vw;
+    height: 578px;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,1); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
+    background: rgb(8,8,8);
+    background: linear-gradient(0deg, rgba(8,8,8,1) 0%, rgba(0,0,0,0) 63%);
+    z-index: 5;
+    cursor: pointer;
   }
