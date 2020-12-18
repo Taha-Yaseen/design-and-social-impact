@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RHU+</title>
-    <!-- Bootstrap Grid -->
-    <!-- <link rel="stylesheet" href="src/css/bootstrap-grid.css"> -->
     <!-- Custom Styling -->
     <link rel="stylesheet" href="src/css/custom.css">
+    <!-- Carousel CSS -->
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/reveal.css">
     <!-- Home Page Styling -->
     <link rel="stylesheet" href="src/css/index.css">
     <!-- Font awesome icons -->
@@ -17,7 +18,7 @@
 
 <body>
     <!-- <div class="background-image"></div> -->
-    <div class="h-100vh bg-black">
+    <div id="intro-section" class="h-100vh bg-black">
         <div class="navbar">
             <div class="navbar-logo">
                 <a><img src="src/images/logo.png" alt="RHU+ Logo" /></a>
@@ -34,7 +35,7 @@
                         <a href="#">
                             About Us
                             <span class="underline"></span>
-                        </a href="#">
+                        </a>
                     </li>
                     <li class="navbar-item">
                         <a href="#">
@@ -68,15 +69,53 @@
             <a href="https://linkedin.com"><i class="fa fa-linkedin"></i></a>
             <a href="https://youtube.com"><i class="fa fa-youtube-play"></i></a>
         </div>
-        <div class="slide">
+        <!-- <div id="slider">
             <p class="subtitle">Master Your</p>
-            <div class="row title-container">
-                <p class="title">Anywhere</p>
-                <div class="dot"></div>
+            <div class="slide">
+                <div class="row title-container">
+                    <p class="title">Skills</p>
+                    <div class="dot bg-yellow"></div>
+                </div>
             </div>
-        </div>
+    
+            <div class="slide slide-hidden">
+                <div class="row title-container">
+                    <p class="title">Anytime</p>
+                    <div class="dot bg-primary"></div>
+                </div>
+            </div>
+    
+            <div class="slide slide-hidden">
+                <div class="row title-container">
+                    <p class="title">Anywhere</p>
+                    <div class="dot bg-fuchsia"></div>
+                </div>
+            </div>
+        </div> -->
+        <div class="reveal">
+			<div class="slides">
+				<section>
+                    <div class="row title-container">
+                        <p class="title">Skills</p>
+                        <div class="dot bg-yellow"></div>
+                    </div>
+                </section>
+				<section>
+                    <div class="row title-container">
+                        <p class="title">Anytime</p>
+                        <div class="dot bg-primary"></div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row title-container">
+                        <p class="title">Anywhere</p>
+                        <div class="dot bg-fuchsia"></div>
+                    </div>
+                </section>
+			</div>
+		</div>
 
-
+        <div id="slider-line"></div>
         <a id="down-arrow-anchor" href="#about-us">
             <i class="fa fa-angle-down down-arrow"></i>
         </a>
@@ -208,7 +247,9 @@
 
     <!-- SCRIPTS -->
 
-    <script src="src/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="src/js/jquery-3.5.1.min.js"></script>
+    <script src="src/js/jquery.color-2.1.2.min.js"></script>
+    <script src="src/js/reveal.js"></script>
     <script src="src/js/custom.js"></script>
     <script src="src/js/index.js"></script>
 </body>
