@@ -5,28 +5,32 @@ h1 {
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    padding-bottom: 30px;
     font-weight: bold;
+}
+
+.confirm {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 .sent > p {
     margin: 0;
     padding-left: 8px;
-    position: relative;
-    top: -10px;
     margin-bottom: 20px;
 }
 
 #signup-box {
     flex-direction: column;
     justify-content: flex-start;
-    position: relative;
-    top: -30px;
 }
 
 .titles {
     text-align: left;
     font-size: 80px;
-    /* padding-bottom: 50px; */
+    padding-bottom: 30px;
     margin-left: 230px;
     margin-bottom: 0;
     margin-top: 0;
@@ -89,13 +93,15 @@ label {
 
 .form-wrapper {
     padding-bottom: 22px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
 }
 
 .is-grouped {
-    padding-bottom: 30px;
-    position: relative;
+    padding-bottom: 40px;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 .is-grouped>.bg-primary:not(:last-child) {
@@ -109,7 +115,7 @@ label {
     border-style: solid;
     border-color: #E2E2E2;
     height: 50px;
-    width: 440px;
+    width: 93%;
 }
 
 .form > h1 {
@@ -138,15 +144,13 @@ label {
 
 .sent {
     font-size: 25px;
-    position: relative;
-    right: 2px;
+    padding-bottom: 20px;
+    /* position: relative; */
+    /* right: 2px; */
 }
 
 .all {
-    /*  position: relative; */
-    /* right: 13px; */
-    /* width: 12vw; */ 
-
+    padding: 0;
 }
 
 .bg-primary1 {
@@ -174,9 +178,8 @@ label {
 }
 
 .already-description {
-    position: relative;
-    right: -110px;
-    top: -48px;
+    margin-left: 200px;
+    font-size: 20px;
 }
 
 .bg-primary4 {
@@ -194,12 +197,9 @@ label {
     right: 80px;
 }
 
-/* .confirm {
-    flex-direction: row;
-    justify-content: flex-start;
-    position: relative;
-    right: -375px;
-} */
+.checkbox-button {
+    padding-left: 5px;
+}
 
 input[type="checkbox" i] {
     transform: scale(2.5);
@@ -214,9 +214,9 @@ input[type="checkbox" i] {
     transition: all 150ms linear;
     /* box-shadow: 0px 0px 20px 0px rgba(33,188,236,0.5); */
     background-color: #21BCEC;
-    position: relative;
-    right: 160px;
-    top: 100px
+    /* position: relative; */
+    /* right: 160px; */
+    /* top: 100px */
 }
 
 #right-container {
